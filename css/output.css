@@ -608,6 +608,13 @@
       }
     }
   }
+  .hover\:bg-white {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-white);
+      }
+    }
+  }
   .hover\:text-\[\#d29107\] {
     &:hover {
       @media (hover: hover) {
@@ -661,6 +668,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-orange-500);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
