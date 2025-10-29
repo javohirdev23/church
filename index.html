@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Church</title>
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-sans">
+    <header class="bg-[black] sm:">
+      <div
+        class="container mx-auto max-w-[1280px] flex items-center justify-between flex-wrap h-[80px]"
+      >
+        <a
+          href="#"
+          class="flex items-center ml-[50px] border-[#3d3c3c] border-[0px_2px_0px_0px] h-[100%] pr-[15px]"
+          ><img src="./img/Finsweet.logo.svg" alt="logo"
+        /></a>
+        <nav class="hidden md:flex gap-6 text-gray-400 mr-[400px]">
+          <a href="#" class="hover:text-orange-500">Home</a>
+          <a href="./units/aboutus.html" class="hover:text-orange-500"
+            >About us</a
+          >
+          <a href="./units/sermon.html" class="hover:text-orange-500">Sermon</a>
+          <a href="./units/blog.html" class="hover:text-orange-500">Blog</a>
+        </nav>
+        <a href="./units/contact.html">
+          <button
+            class="relative px-[10px] mr-[50px] py-[4px] bg-[#FFD2A4] font-semibold border-[2px] overflow-hidden group rounded-[6px] cursor-pointer border-none"
+          >
+            <span
+              class="absolute inset-0 bg-amber-500 translate-x-[-100%] group-hover:tanslate-x-0 rounded-full transition-transform duration-400"
+            ></span>
+            <span
+              class="relative z-10 text-black group-hover:text-orange-400 transition-colors duration-400"
+              >CONTACT US</span
+            >
+          </button>
+        </a>
+      </div>
+    </header>
+    <main class="">
+      <section class="bg-[url('./hero.jpg')]"></section>
+      <section></section>
+      <section></section>
+    </main>
+
+    <footer
+      class="bg-[#1C1D28] text-white flex justify-center items-center py-12"
+    >
+      <div
+        class="max-w-[1280px] flex flex-col items-center sm:items-start w-full gap-5 sm:grid sm:grid-cols-5 sm:flex justify-between lg:gap-[50px] px-10"
+      >
+        <ul class="text-[12px] uppercase flex flex-col gap-4 lg:gap-[36px]">
+          <li>
+            <a href="#" class="flex justify-center sm:justify-start">
+              <img
+                class="hidden sm:inline-block"
+                src="./img/footer.logo.svg"
+                alt="footer logo"
+                aria-hidden="true"
+              />
+            </a>
+          </li>
+          <li>
+            <p>© Copyright Finsweet 2022</p>
+          </li>
+          <li class="flex flex-col gap-[10px] items-center sm:items-start">
+            <p>(480) 555-0103</p>
+            <p>4517 Washington Ave.</p>
+            <p>finsweet@example.com</p>
+          </li>
+        </ul>
+
+        <ul
+          class="text-[12px] flex items-center flex-col gap-2 sm:items-start lg:gap-[35px]"
+        >
+          <p class="text-[16px]">Quicklinks</p>
+          <div class="flex flex-row gap-3 sm:flex-col lg:gap-[20px]">
+            <li>
+              <a
+                class="text-[12px] uppercase transition-colors hover:text-orange-500"
+                href="./units/aboutus.html"
+                >about us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[12px] uppercase transition-colors hover:text-orange-500"
+                href="./units/sermon.html"
+                >seremons</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[12px] uppercase transition-colors hover:text-orange-500"
+                href="./units/seremonevent.html"
+                >events</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[12px] uppercase transition-colors hover:text-orange-500"
+                href="./units/blog.html"
+                >blog</a
+              >
+            </li>
+          </div>
+        </ul>
+
+        <div
+          class="flex gap-2 lg:gap-[30px] flex-col items-center lg:mr-25 sm:items-start"
+        >
+          <p class="text-[16px]">Connect</p>
+          <ul class="flex flex-row gap-[20px]">
+            <a href="#" class="text-[#FFD2A4]">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#" class="text-[#FFD2A4]">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="text-[#FFD2A4]">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </ul>
+        </div>
+
+        <form
+          class="flex flex-col gap-[43px] max-w-full col-span-full sm:col-span-2 w-full sm:max-w-[550px]"
+          method="post"
+        >
+          <h2 class="uppercase font-bold text-[32px] hidden lg:inline-block">
+            Subscribe to get Latest <br />Updates and News
+          </h2>
+          <div class="w-full lg:max-w-[600px] h-[64px] relative">
+            <input
+              class="border-1 outline-0 border-[#fff5] w-full h-full rounded-[12px] px-[18px] text-[16px]"
+              type="email"
+              name="email"
+              placeholder="youremail@gmail.com"
+            />
+            <button
+              class="absolute uppercase bg-[#ffd2a4] rounded-[12px] text-[#1c1d28] right-0 top-0 w-full max-w-[120px] xl:max-w-[201px] h-full flex justify-center items-center transition-colors duration-300 hover:text-orange-500"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
