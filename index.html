@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="font-sans">
-    <header class="bg-[black] sm:">
+  <body class="h-full flex flex-col">
+    <header class="bg-[black]">
       <div
         class="container mx-auto max-w-[1280px] flex items-center justify-between flex-wrap h-[80px]"
       >
@@ -29,17 +29,32 @@
           class="flex items-center ml-[50px] border-[#3d3c3c] border-[0px_2px_0px_0px] h-[100%] pr-[15px]"
           ><img src="./img/Finsweet.logo.svg" alt="logo"
         /></a>
-        <nav class="hidden md:flex gap-6 text-gray-400 mr-[400px]">
-          <a href="#" class="hover:text-orange-500">Home</a>
-          <a href="./units/aboutus.html" class="hover:text-orange-500"
+        <nav
+          class="hidden md:flex gap-6 text-gray-400 mr-[400px] sm:hidden lg:justify-center items-center sm:mr-[0px] md:mr-[50px] lg:mr-[200px] xl:mr-[400px] xl:gap-10"
+        >
+          <a href="./index.html" class="hover:text-orange-500">Home</a>
+          <a
+            href="./units/aboutus.html "
+            target="_blank"
+            class="hover:text-orange-500"
             >About us</a
           >
-          <a href="./units/sermon.html" class="hover:text-orange-500">Sermon</a>
-          <a href="./units/blog.html" class="hover:text-orange-500">Blog</a>
+          <a
+            href="./units/sermon.html"
+            target="_blank"
+            class="hover:text-orange-500"
+            >Sermon</a
+          >
+          <a
+            href="./units/blog.html"
+            target="_blank"
+            class="hover:text-orange-500"
+            >Blog</a
+          >
         </nav>
-        <a href="./units/contact.html">
+        <a href="./units/contact.html" target="_blank">
           <button
-            class="relative px-[10px] mr-[50px] py-[4px] bg-[#FFD2A4] font-semibold border-[2px] overflow-hidden group rounded-[6px] cursor-pointer border-none"
+            class="relative px-[10px] mr-[50px] py-[4px] bg-[#FFD2A4] font-semibold border-[2px] overflow-hidden group rounded-[6px] cursor-pointer border-none lg:pl-[-50px] sm:mr-[0px]md: mr-[20px] lg:mr-[50px] xl:mr-[100px] xl:px-[20px]"
           >
             <span
               class="absolute inset-0 bg-amber-500 translate-x-[-100%] group-hover:tanslate-x-0 rounded-full transition-transform duration-400"
@@ -52,10 +67,376 @@
         </a>
       </div>
     </header>
-    <main class="">
-      <section class="bg-[url('./hero.jpg')]"></section>
-      <section></section>
-      <section></section>
+    <main class="grow">
+      <section
+        class="bg-[url('/img/hero.jpg')] bg-cover bg-no-repeat bg-center h-screen"
+      >
+        <div class="flex flex-col pl-[110px] pt-[128px]">
+          <p class="text-white">Welcome to our CHURCH</p>
+          <h2 class="text-[48px] font-bold pt-[16px] text-white">
+            Become a part of <br />
+            our community
+          </h2>
+          <a class="pt-[32px]" href="#"
+            ><button
+              class="border-[2px] rounded-[12px] p-[15px_30px] bg-[#FFD2A4] border-none hover:text-orange-500 duration-300 cursor-pointer"
+            >
+              LEARN MORE
+            </button></a
+          >
+
+          <span class="text-white pt-[64px]">
+            Find your home in a community <br />
+            built on kindness and faith.</span
+          >
+        </div>
+      </section>
+      <section class="mt-[128px]">
+        <div class="flex flex-col justify-center items-center">
+          <p>sub-headline</p>
+          <h2 class="mt-[16px] font-bold text-[48px]">
+            a church that's relevant
+          </h2>
+        </div>
+        <ul class="flex gap-[24px] pt-[72px] justify-center w-auto">
+          <li
+            class="bg-[#FFF5EB] pt-[152px] pl-[80px] pr-[80px] w-[411px] border-[#FFD2A4] border-[0px_0px_16px_0px]"
+          >
+            <span
+              ><img class="" src="./img/aboutusborder.svg" alt="About us logo"
+            /></span>
+            <h3 class="font-bold text-[22px] pt-[24px]">About us</h3>
+            <p class="pt-[8px] pb-[80px]">
+              The Church is more than just a <br />
+              building. It is a community believers united by <br />
+              the spirit of faith, hope, and love.
+            </p>
+          </li>
+          <li
+            class="bg-[#FFF5EB] pt-[152px] pl-[80px] pr-[80px] w-[411px] border-[#FFD2A4] border-[0px_0px_16px_0px]"
+          >
+            <span
+              ><img src="./img/getinvoved.svg" alt="get involved logo"
+            /></span>
+            <h3 class="font-bold text-[22px] pt-[24px]">Get involved</h3>
+            <p class="pt-[8px] pb-[80px]">
+              Everyone's role is important. <br />
+              Become a part of Church life by <br />
+              participating in worship, study.
+            </p>
+          </li>
+          <li
+            class="bg-[#FFF5EB] pt-[152px] pl-[80px] pr-[80px] w-[411px] border-[#FFD2A4] border-[0px_0px_16px_0px]"
+          >
+            <span><img src="./img/getback.svg" alt="Giving back logo" /></span>
+            <h3 class="font-bold text-[22px] pt-[24px]">Giving back</h3>
+            <p class="pt-[8px] pb-[80px]">
+              Generosity and giving back are <br />
+              practical expressions of our love for God. <br />
+              Contribute to the greater good.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="mt-[128px]">
+        <div>
+          <div class="flex flex-col justify-center items-center">
+            <p>SUB-HEADLINE</p>
+            <h2 class="pt-[16px] font-bold text-[48px]">love and compassion</h2>
+            <p class="pt-[32px] pb-[56px]">
+              The foundation of our faith is God's boundless love and compassion
+              for every person. We strive to follow Jesus Christ's <br />
+              <span class="pl-[60px]">
+                command to 'Love one another.' This love is not just a word; it
+                is manifested in our actions,</span
+              >
+              <br /><span class="pl-[200px]"
+                >our community, and our outreach to those in need.</span
+              >
+            </p>
+            <a
+              class="text-black bg-[#FFD2A4] p-[24px_64px] rounded-[12px] hover:text-orange-500 duration-300 mb-[48px]"
+              href=""
+              >Read more</a
+            >
+          </div>
+
+          <div class="flex justify-center items-center gap-[24px]">
+            <img src="./img/prayerguy.svg" alt="prayerguy" />
+            <img
+              class="rounded-[30px] relative top-[150px]"
+              src="./img/prayers.svg.jpg "
+              width="390px"
+              height="512px"
+              alt="two prayer"
+            />
+            <img
+              class="rounded-[30px]"
+              src="./img/nunwoman.svg.svg"
+              height="384px"
+              width="293px"
+              alt="nun woman"
+            />
+          </div>
+
+          <div class="flex flex-col justify-center items-center pt-[220px]">
+            <p>our mission & vision</p>
+            <h2 class="font-bold text-[32px] pt-[16px]">celebrate WITH US</h2>
+            <p class="pt-[16px] pb-[16px]">
+              Our mission is to inspire people into a deeper relationship with
+              God and to spread the Gospel message. <br />
+              <span class="pl-[120px]"
+                >Our vision is to create a welcoming community that serves
+                as</span
+              >
+              <br />
+              <span class="pl-[230px]">
+                a center of faith, hope, and love.</span
+              >
+            </p>
+            <div class="flex">
+              <a class="" href="#">Read more</a>
+              <img class="pl-[10px]" src="./img/strelka.svg" alt="korsatkich" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-[#F5F2F0] w-auto mt-[128px]">
+        <div class="pt-[128px] flex flex-col justify-center items-center">
+          <p>Watch and listen</p>
+          <h2 class="font-bold text-[48px]">
+            <span class="pl-[30px]">THE benefits of</span> <br />
+            joining our church
+          </h2>
+        </div>
+        <ul class="flex gap-6 pt-[64px] text-white justify-center pb-[128px]">
+          <li
+            class="bg-[url(../img/nun.svg.svg)] min-h-96 bg-center bg-cover bg-no-repeat"
+          >
+            <div class="pl-[32px] pt-[208px] pr-[32px]">
+              <h3 class="text-[24px]">
+                WATCH AND LISTEN TO <br />
+                OUR SERMONS
+              </h3>
+              <p class="pt-[16px] pb-[32px]">
+                Strengthen your faith and listen <br />
+                to our priests' latest messages. <br />
+                Learn the Divine Word <br />
+                anytime, anywhere.
+              </p>
+            </div>
+          </li>
+          <li
+            class="bg-[url(../img/sermonbook.svg)] min-h-96 bg-center bg-cover bg-no-repeat"
+          >
+            <div class="pl-[32px] pt-[296px] pb-[32px] pr-[32px]">
+              <h3 class="text-[24px]">
+                WATCH AND LISTEN TO <br />
+                OUR SERMONS
+              </h3>
+            </div>
+          </li>
+          <li
+            class="bg-[url(../img/churchguy.svg)] min-h-96 bg-center bg-cover bg-no-repeat"
+          >
+            <div class="pl-[32px] pt-[296px] pb-[32px] pr-[32px]">
+              <h3 class="text-[24px]">
+                WATCH AND LISTEN TO <br />
+                OUR SERMONS
+              </h3>
+            </div>
+          </li>
+          <li
+            class="bg-[url(../img/uniqepicture.svg)] min-h-96 bg-center bg-cover bg-no-repeat"
+          >
+            <div class="pl-[32px] pt-[296px] pb-[32px] pr-[32px]">
+              <h3 class="text-[24px]">
+                WATCH AND LISTEN TO <br />
+                OUR SERMONS
+              </h3>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="w-auto mt-[128px]">
+        <div class="container mx-auto">
+          <div class="flex flex-col justify-center items-center">
+            <p>Upcoming SERMONS</p>
+            <h2 class="pt-[16px] text-[48px] font-bold">
+              join us and become part <br />
+              <span class="pl-[40px]"> of something great</span>
+            </h2>
+            <div class="flex justify-center items-center pt-[64px]">
+              <div class="bg-[#FFF5EB] felx-col pl-[89px]">
+                <span
+                  class="pl-[371px] pt-[32px] font-bold flex flex-col pr-[32px]"
+                >
+                  20
+                  <span>july</span>
+                </span>
+                <p class="text-[#DC9853]">Upcoming Event</p>
+                <h3 class="font-bold text-[24px] pt-[16px]">
+                  WATCH AND LISTEN <br />
+                  TO OUR SERMONS
+                </h3>
+                <p class="pt-[16px]">
+                  Join us to hear powerful messages that <br />
+                  will bring new meaning and direction to your life.
+                </p>
+                <div class="pt-[32px]">
+                  <div class="flex">
+                    <img src="./img/Clockicon.svg" alt="clock icon" />
+                    <p class="pl-[16px]">
+                      Friday <time datetime="23:39"> 23:39 </time> IST <br />
+                      Saturday <time datetime="11:20">11:20</time> ISD
+                    </p>
+                  </div>
+                  <div class="flex pb-[20px]">
+                    <img src="./img/searchicon.svg" alt="search icon" />
+                    <address class="pl-[16px]">
+                      No 233 Main St. New York,<br />
+                      United States
+                    </address>
+                  </div>
+                </div>
+                <div class="pb-[37px]">
+                  <a href="#">
+                    <button
+                      class="pt-[25px] rounded-[15px] bg-black p-[24px_64px_24px_64px] text-white hover:text-orange-500 hover:bg-[#FFD2A4] cursor-pointer duration-300"
+                    >
+                      Register
+                    </button>
+                  </a>
+                </div>
+              </div>
+              <img src="./img/demonangel.svg" alt="farishta va shayton" />
+            </div>
+            <div class="flex hover:text-orange-500 duration-300 cursor-pointer">
+              <a class="pl-[1081px] pt-[48px]" href="#">View all Sermons</a>
+              <img
+                class="pl-[10px] pt-[48px] hover:text-orange-500 cursor-pointer"
+                src="./img/strelka.svg"
+                alt="korsatkich"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-[url('/img/ctabackround.svg')] bg-cover bg-no-repeat bg-center h-screen mt-[128px] flex justify-center items-center w-auto"
+      >
+        <div class="bg-white flex border-[#FFD2A4] border-[0px_0px_16px_0px]">
+          <div class="pl-[48px] flex flex-col pt-[72px]">
+            <h2 class="font-bold text-[48px]">
+              We want to <br />
+              serve the world <br />
+              around us
+            </h2>
+            <p class="pt-[16px] pb-[16px]">
+              A quote from the Holy Bible about the <br />
+              church's great mission in serving the community.
+            </p>
+            <div class="pb-[72px]">
+              <a class="pt-[32px]" href="#"
+                ><button
+                  class="border-[2px] rounded-[12px] p-[24px_64px] bg-[#FFD2A4] border-none hover:text-orange-500 duration-300 cursor-pointer"
+                >
+                  VISIT
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="flex pl-[117px]">
+            <img src="./img/Quoteicon.svg" alt="cta icon" />
+          </div>
+        </div>
+      </section>
+      <section class="w-auto mt-[128px] mb-[128px]">
+        <div class="flex flex-col justify-center items-center">
+          <p>Read our Blog</p>
+          <h2 class="font-bold text-[48px] pt-[16px]">
+            SHARE, INSPIRE, INNOVATE
+          </h2>
+          <ul class="flex gap-[24px] pt-[64px] justify-center w-auto">
+            <li
+              class="bg-[#FFF5EB] border-[#FFD2A4] border-[0px_0px_16px_0px] pl-[32px] pt-[48px]"
+            >
+              <p class="text-[#DC9853]">Relationship</p>
+              <h3 class="pt-[16px] text-[24px] font-bold pr-[52px]">
+                WATCH AND LISTEN TO <br />
+                OUR SERMONS
+              </h3>
+              <p class="pt-[16px] pb-[48px]">
+                Learn how Christian hope can <br />
+                anchor your soul amidst life's.
+              </p>
+              <div class="pb-[32px]">
+                <span>
+                  By Mathew Johnson <br />
+                  Tuesday 13 May, 2021
+                </span>
+              </div>
+            </li>
+            <li
+              class="bg-[#FFF5EB] wx-[302px] pl-[32px] pt-[48px] border-[#FFD2A4] border-[0px_0px_16px_0px]"
+            >
+              <p class="text-[#DC9853]">COMMUNITY OUTREACH</p>
+              <h3 class="pt-[16px] text-[24px] font-bold pr-[52px]">
+                Serving Our Neighbors <br />
+                with Love
+              </h3>
+              <p class="pt-[16px] pb-[48px]">
+                Discover practical ways to extend <br />
+                compassion and build stronger connections
+              </p>
+              <div class="pb-[32px]">
+                <span>
+                  By Sarah K. <br />
+                  Wednesday 22 May, 2024
+                </span>
+              </div>
+            </li>
+            <li
+              class="bg-[#FFF5EB] wx-[302px] border-[#FFD2A4] border-[0px_0px_16px_0px] pl-[32px] pt-[48px]"
+            >
+              <p class="text-[#DC9853]">SPIRITUAL GROWTH</p>
+              <h3 class="pt-[16px] text-[24px] font-bold pr-[52px]">
+                Understanding The Parable <br />
+                of the Sower
+              </h3>
+              <p class="pt-[16px] pb-[48px]">
+                A deep dive into the biblical text <br />
+                to reveal lessons about receiving
+              </p>
+              <div class="pb-[32px]">
+                <span>
+                  By Elder David L. <br />
+                  Friday 24 May, 2024
+                </span>
+              </div>
+            </li>
+            <li
+              class="bg-[#FFF5EB] border-[#FFD2A4] border-[0px_0px_16px_0px] pl-[32px] pt-[48px]"
+            >
+              <p class="text-[#DC9853]">FAMILY LIFE</p>
+              <h3 class="pt-[16px] text-[24px] font-bold pr-[52px]">
+                Raising Godly Children <br />
+                in a Digital Age
+              </h3>
+              <p class="pt-[16px] pb-[48px]">
+                Practical advice for parents navigating <br />
+                the challenges of technology while
+              </p>
+              <div class="pb-[32px]">
+                <span>
+                  By Mathew Johnson <br />
+                  Tuesday 13 May, 2021
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer
@@ -94,6 +475,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="./units/aboutus.html"
+                target="_blank"
                 >about us</a
               >
             </li>
@@ -101,6 +483,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="./units/sermon.html"
+                target="_blank"
                 >seremons</a
               >
             </li>
@@ -108,6 +491,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="./units/seremonevent.html"
+                target="_blank"
                 >events</a
               >
             </li>
@@ -115,6 +499,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="./units/blog.html"
+                target="_blank"
                 >blog</a
               >
             </li>

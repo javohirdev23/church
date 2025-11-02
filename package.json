@@ -5,5 +5,8 @@
   },
   "scripts": {
     "fn47": "npx @tailwindcss/cli -i ./css/style.css -o ./css/output.css --watch"
+  },
+  "devDependencies": {
+    "daisyui": "^5.3.10"
   }
 }

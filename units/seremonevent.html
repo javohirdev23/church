@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="font-sans">
+  <body class="h-full flex flex-col font-sans">
     <header class="bg-[black]">
       <div
         class="container mx-auto max-w-[1280px] flex items-center justify-between flex-wrap h-[80px]"
@@ -30,12 +30,18 @@
           ><img src="../img/Finsweet.logo.svg" alt="logo"
         /></a>
         <nav class="hidden md:flex gap-6 text-gray-400 mr-[400px]">
-          <a href="../index.html" class="hover:text-orange-500">Home</a>
-          <a href="aboutus.html" class="hover:text-orange-500"
+          <a href="../index.html" target="_blank" class="hover:text-orange-500"
+            >Home</a
+          >
+          <a href="aboutus.html" target="_blank" class="hover:text-orange-500"
             >About us</a
           >
-          <a href="sermon.html" class="hover:text-orange-500">Sermon</a>
-          <a href="blog.html" class="hover:text-orange-500">Blog</a>
+          <a href="sermon.html" target="_blank" class="hover:text-orange-500"
+            >Sermon</a
+          >
+          <a href="blog.html" target="_blank" class="hover:text-orange-500"
+            >Blog</a
+          >
         </nav>
         <a href="./contact.html">
           <button
@@ -52,7 +58,7 @@
         </a>
       </div>
     </header>
-    <main class="">
+    <main class="grow">
       <section class="bg-[url('./hero.jpg')]"></section>
       <section></section>
       <section></section>
@@ -102,6 +108,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="aboutus.html"
+                target="_blank"
                 >about us</a
               >
             </li>
@@ -109,6 +116,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="./sermon.html"
+                target="_blank"
                 >seremons</a
               >
             </li>
@@ -116,6 +124,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="seremonevent.html"
+                target="_blank"
                 >events</a
               >
             </li>
@@ -123,6 +132,7 @@
               <a
                 class="text-[12px] uppercase transition-colors hover:text-orange-500"
                 href="blog.html"
+                target="_blank"
                 >blog</a
               >
             </li>
